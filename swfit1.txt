@@ -1,0 +1,147 @@
+Program1:
+
+let apples = 17
+let people = 5
+print(apples / people) // 3 (whole number only)
+print(apples % people) // 2 (what is left over)
+print(Double(apples) / Double(people)) // 3.4 (decimal division)
+
+output:
+
+3
+2
+3.4
+
+
+Program2:
+
+print("Hello, World!")
+print("Welcome to Swift Programming")
+print("I am learning Swift")
+
+output:
+
+Hello, World!
+Welcome to Swift Programming
+I am learning Swift
+
+Program 3:
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Text("Welcome!")
+                .font(.largeTitle)
+
+            Text("My First UI Design")
+                .font(.title2)
+
+            Button("Click Me") {
+                print("Button Clicked")
+            }
+        }
+    }
+}
+
+Program 4:
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Image(systemName: "person.circle.fill")
+                .font(.system(size: 80))
+                .foregroundColor(.blue)
+
+            Text("Abinaya")
+                .font(.title)
+                .bold()
+
+            Text("Computer Science Student")
+                .foregroundColor(.gray)
+        }
+    }
+}
+
+program 4: SwiftUI screen 
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Text("Hello, World!")
+            Text("I am learning SwiftUI")
+        }
+    }
+}
+
+#Preview {
+    ContentView()
+}
+  
+program 5: Text styling 
+
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack(spacing: 20) {
+            Text("Welcome!")
+                .font(.largeTitle)
+                .bold()
+
+            Text("SwiftUI Beginner")
+                .font(.title2)
+                .foregroundStyle(.blue)
+
+            Text("My first iOS screen")
+                .font(.body)
+                .foregroundStyle(.gray)
+        }
+        .padding()
+    }
+}
+
+#Preview {
+    ContentView()
+}
+  
+
+program 6: Button 
+
+ 
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack(spacing: 20) {
+            Text("My First App")
+                .font(.largeTitle)
+                .bold()
+
+            Button("Get Started") {
+                print("Button clicked!")
+            }
+            .padding()
+            .background(.blue)
+            .foregroundStyle(.white)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+        }
+        .padding()
+    }
+}
+
+#Preview {
+    ContentView()
+}
+  
+
