@@ -1,0 +1,125 @@
+program 1: Greeting App
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        Text("Hello, World!")
+            .font(.title)
+            .padding()
+    }
+}
+
+
+program 2: change text button
+
+
+
+import SwiftUI
+
+struct ContentView: View {
+    @State private var message = "Welcome"
+
+    var body: some View {
+        VStack {
+            Text(message)
+
+            Button("Click Me") {
+                message = "Hello, Swift!"
+            }
+        }
+        .padding()
+    }
+}
+
+
+'program 3: show your name
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Text("My Profile")
+                .font(.title)
+
+            Text("Name: Abinaya")
+            Text("Department: CSE")
+            Text("Role: Student")
+        }
+        .padding()
+    }
+}
+
+
+program 4:  simple counter
+
+
+import SwiftUI
+
+struct ContentView: View {
+    @State private var count = 0
+
+    var body: some View {
+        VStack {
+            Text("Count: \(count)")
+
+            Button("Add") {
+                count += 1
+            }
+        }
+        .padding()
+    }
+}
+
+
+program 5:  simple login screen
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack(spacing: 15) {
+            Text("Login")
+                .font(.title)
+
+            TextField("Username", text: .constant(""))
+                .textFieldStyle(.roundedBorder)
+
+            SecureField("Password", text: .constant(""))
+                .textFieldStyle(.roundedBorder)
+
+            Button("Login") {
+                print("Login clicked")
+            }
+            .buttonStyle(.borderedProminent)
+        }
+        .padding()
+    }
+}
+
+
+program 6:  like button
+
+
+import SwiftUI
+
+struct ContentView: View {
+    @State private var liked = false
+
+    var body: some View {
+        Button {
+            liked.toggle()
+        } label: {
+            Label(
+                liked ? "Liked" : "Like",
+                systemImage: liked ? "heart.fill" : "heart"
+            )
+            .foregroundColor(.red)
+        }
+        .padding()
+    }
+}
