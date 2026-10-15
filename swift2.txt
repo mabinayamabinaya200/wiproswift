@@ -1,0 +1,144 @@
+program 1:  welcome screen:
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Text("Welcome!")
+                .font(.largeTitle)
+
+            Text("My First App")
+
+            Button("Get Started") {
+                print("Started")
+            }
+        }
+    }
+}
+
+
+program 2: personal profile UI:
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Image(systemName: "person.circle.fill")
+                .font(.system(size: 80))
+                .foregroundColor(.blue)
+
+            Text("Abinaya")
+                .font(.title)
+                .bold()
+
+            Text("Computer Science Student")
+                .foregroundColor(.gray)
+        }
+    }
+}
+
+
+program 3:  Login screen:
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack(spacing: 15) {
+            Text("Login")
+                .font(.largeTitle)
+                .bold()
+
+            TextField("Email", text: .constant(""))
+                .textFieldStyle(.roundedBorder)
+
+            SecureField("Password", text: .constant(""))
+                .textFieldStyle(.roundedBorder)
+
+            Button("Sign In") {
+                print("Sign In Clicked")
+            }
+        }
+        .padding()
+    }
+}
+
+
+program 4:  colorful text UI
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Text("Hello Swift")
+                .font(.largeTitle)
+                .foregroundColor(.blue)
+
+            Text("Learn Every Day")
+                .font(.title2)
+                .foregroundColor(.green)
+
+            Text("Keep Practicing!")
+                .foregroundColor(.orange)
+        }
+    }
+}
+
+
+program 5:  counter UI
+
+
+
+import SwiftUI
+
+struct ContentView: View {
+    @State private var count = 0
+
+    var body: some View {
+        VStack(spacing: 20) {
+            Text("Counter App")
+                .font(.largeTitle)
+
+            Text("\(count)")
+                .font(.system(size: 50))
+
+            Button("Increase") {
+                count += 1
+            }
+        }
+    }
+}
+
+
+program 6:  Student details UI
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack(spacing: 12) {
+            Text("Student Details")
+                .font(.title)
+                .bold()
+
+            Text("Name: Abinaya")
+            Text("Department: CSE")
+            Text("Year: Final Year")
+
+            Text("Welcome to My Profile")
+                .foregroundColor(.green)
+        }
+    }
+}
+
+
+
+
