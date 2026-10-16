@@ -1,0 +1,80 @@
+program 1: check positive, negative or zero
+
+
+let number = -5
+
+if number > 0 {
+    print("Positive Number")
+} else if number < 0 {
+    print("Negative Number")
+} else {
+    print("Zero")
+}
+
+
+program 2: swap two numbers
+
+
+var a = 10
+var b = 20
+
+let temp = a
+a = b
+b = temp
+
+print("a = \(a)")
+print("b = \(b)")
+
+
+program 3: multiplication table
+
+
+
+let number = 5
+
+for i in 1...10 {
+    print("\(number) x \(i) = \(number * i)")
+}
+
+
+program 4: count vowels in a string
+
+
+let text = "Hello Swift"
+var count = 0
+
+for character in text.lowercased() {
+    if "aeiou".contains(character) {
+        count += 1
+    }
+}
+
+print("Vowel count = \(count)")
+
+
+program 5: check palindrome
+
+
+let word = "madam"
+let reversed = String(word.reversed())
+
+if word == reversed {
+    print("Palindrome")
+} else {
+    print("Not a Palindrome")
+}
+
+
+program 6: find the largest number in an array
+
+
+let numbers = [12, 45, 7, 89, 23]
+var largest = numbers[0]
+
+for number in numbers {
+    if number > largest {
+        largest = number
+    }
+}
+
+print("Largest number = \(largest)")
