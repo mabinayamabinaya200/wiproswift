@@ -1,0 +1,88 @@
+program1: find the largest of three numbers 
+
+
+let a = 25
+let b = 70
+let c = 45
+
+if a > b && a > c {
+    print("Largest:", a)
+} else if b > a && b > c {
+    print("Largest:", b)
+} else {
+    print("Largest:", c)
+}
+
+program2: grade calculator
+
+
+let marks = 85
+
+if marks >= 90 {
+    print("Grade A")
+} else if marks >= 80 {
+    print("Grade B")
+} else if marks >= 70 {
+    print("Grade C")
+} else if marks >= 50 {
+    print("Grade D")
+} else {
+    print("Fail")
+}
+
+
+program3: check leap year
+
+
+let year = 2024
+
+if (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0) {
+    print("Leap Year")
+} else {
+    print("Not a Leap Year")
+}
+
+program4: day of the week using switch
+
+
+let day = 3
+
+switch day {
+case 1:
+    print("Monday")
+case 2:
+    print("Tuesday")
+case 3:
+    print("Wednesday")
+case 4:
+    print("Thursday")
+case 5:
+    print("Friday")
+case 6:
+    print("Saturday")
+case 7:
+    print("Sunday")
+default:
+    print("Invalid Day")
+}
+
+
+program5: simple calculator using switch
+
+
+let a = 20
+let b = 10
+let operation = "*"
+
+switch operation {
+case "+":
+    print("Addition:", a + b)
+case "-":
+    print("Subtraction:", a - b)
+case "*":
+    print("Multiplication:", a * b)
+case "/":
+    print("Division:", a / b)
+default:
+    print("Invalid Operation")
+}
