@@ -1,0 +1,51 @@
+program1: print number from 1 to 10
+
+for i in 1...10 {
+    print(i)
+}
+
+program2: print even numbers from 1 to 20
+
+
+for i in 1...20 {
+    if i % 2 == 0 {
+        print(i)
+    }
+}
+
+
+program3: multiplication table
+
+
+let number = 5
+
+for i in 1...10 {
+    print("\(number) x \(i) = \(number * i)")
+}
+
+
+program4: sum of numbers using while loop
+
+
+var number = 1
+var sum = 0
+
+while number <= 10 {
+    sum += number
+    number += 1
+}
+
+print("Sum:", sum)
+
+
+program5: countdown using repeat-while
+
+
+var number = 5
+
+repeat {
+    print(number)
+    number -= 1
+} while number >= 1
+
+print("Start!")
