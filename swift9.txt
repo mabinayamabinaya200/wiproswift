@@ -1,0 +1,58 @@
+program1: compare two numbers
+
+
+let a = 25
+let b = 15
+
+print("a == b:", a == b)
+print("a != b:", a != b)
+print("a > b:", a > b)
+print("a < b:", a < b)
+
+
+program2: check voting eligibility
+
+
+let age = 20
+
+if age >= 18 {
+    print("Eligible to Vote")
+} else {
+    print("Not Eligible to Vote")
+}
+
+
+program3: check number range
+
+
+let number = 45
+
+if number >= 1 && number <= 100 {
+    print("Number is within the range")
+} else {
+    print("Number is outside the range")
+}
+
+program4: check login credentials
+
+
+let username = "admin"
+let password = "12345"
+
+if username == "admin" && password == "12345" {
+    print("Login Successful")
+} else {
+    print("Invalid Credentials")
+}
+
+program5: check scholarship eligibility
+
+
+let marks = 85
+let attendance = 90
+
+if marks >= 80 || attendance >= 95 {
+    print("Eligible for Scholarship")
+} else {
+    print("Not Eligible for Scholarship")
+}
