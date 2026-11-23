@@ -1,0 +1,89 @@
+program1: find the second largest element 
+
+
+let numbers = [10, 50, 30, 80, 60]
+
+var largest = Int.min
+var secondLargest = Int.min
+
+for number in numbers {
+    if number > largest {
+        secondLargest = largest
+        largest = number
+    } else if number > secondLargest && number != largest {
+        secondLargest = number
+    }
+}
+
+if secondLargest == Int.min {
+    print("Second largest not found")
+} else {
+    print("Second Largest:", secondLargest)
+}
+  
+program2: count even and odd numbers
+
+
+let numbers = [10, 15, 20, 25, 30, 35]
+
+var evenCount = 0
+var oddCount = 0
+
+for number in numbers {
+    if number % 2 == 0 {
+        evenCount += 1
+    } else {
+        oddCount += 1
+    }
+}
+
+print("Even Count:", evenCount)
+print("Odd Count:", oddCount)
+
+
+program3: reverse an array
+
+
+let numbers = [10, 20, 30, 40, 50]
+
+var reversed = [Int]()
+
+for number in numbers.reversed() {
+    reversed.append(number)
+}
+
+print("Reversed Array:", reversed)
+
+
+program4:  remove duplicate elements
+
+
+let numbers = [10, 20, 10, 30, 20, 40]
+
+var uniqueNumbers = [Int]()
+
+for number in numbers {
+    if !uniqueNumbers.contains(number) {
+        uniqueNumbers.append(number)
+    }
+}
+
+print("Unique Elements:", uniqueNumbers)
+
+
+program5:  find the frequency of an element 
+
+
+let numbers = [10, 20, 10, 30, 10, 40]
+let target = 10
+
+var count = 0
+
+for number in numbers {
+    if number == target {
+        count += 1
+    }
+}
+
+print("Frequency of \(target):", count)
+
