@@ -1,0 +1,64 @@
+program1: reverse a string
+
+
+let text = "Swift"
+let reversed = String(text.reversed())
+
+print("Reversed String:", reversed)
+
+
+program2: check palindrome string
+
+
+let text = "madam"
+let reversed = String(text.reversed())
+
+if text == reversed {
+    print("Palindrome")
+} else {
+    print("Not Palindrome")
+}
+
+
+program3: count vowels and consonants
+
+
+let text = "Hello World"
+
+var vowels = 0
+var consonants = 0
+
+for char in text.lowercased() {
+    if "aeiou".contains(char) {
+        vowels += 1
+    } else if char.isLetter {
+        consonants += 1
+    }
+}
+
+print("Vowels:", vowels)
+print("Consonants:", consonants)
+
+
+program4: count characters in a string
+
+
+let text = "Programming"
+
+var count = 0
+
+for _ in text {
+    count += 1
+}
+
+print("Total Characters:", count)
+
+
+program5: count words in a string
+
+
+let text = "Swift is easy to learn"
+
+let words = text.split(separator: " ")
+
+print("Total Words:", words.count)
