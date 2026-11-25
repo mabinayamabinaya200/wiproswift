@@ -1,0 +1,92 @@
+program1: simple button
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        Button("Click Me") {
+            print("Button Clicked")
+        }
+        .padding()
+    }
+}
+
+
+program2: button with background color 
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        Button("Login") {
+            print("Login Clicked")
+        }
+        .padding()
+        .background(Color.blue)
+        .foregroundColor(.white)
+        .cornerRadius(10)
+    }
+}
+
+
+program3: button with image
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        Button {
+            print("Liked")
+        } label: {
+            HStack {
+                Image(systemName: "heart.fill")
+                Text("Like")
+            }
+            .padding()
+            .background(Color.red)
+            .foregroundColor(.white)
+            .cornerRadius(10)
+        }
+    }
+}
+
+
+program4: display multiple texts
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack(spacing: 15) {
+            Text("My Profile")
+                .font(.largeTitle)
+                .bold()
+
+            Text("Name: Abinaya")
+
+            Text("Course: BE CSE")
+
+            Text("Skill: SwiftUI")
+                .foregroundColor(.blue)
+        }
+        .padding()
+    }
+}
+
+
+program5: circle shape
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        Circle()
+            .fill(Color.blue)
+            .frame(width: 120, height: 120)
+    }
+}
