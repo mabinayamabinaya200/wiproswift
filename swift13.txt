@@ -1,0 +1,60 @@
+program1: remove space from a string 
+
+
+let text = "Hello Swift World"
+
+let result = text.replacingOccurrences(of: " ", with: "")
+
+print("Result:", result)
+
+
+program2: count frequency of each character
+
+
+let text = "apple"
+var frequency = [Character: Int]()
+
+for char in text {
+    frequency[char, default: 0] += 1
+}
+
+for char in text {
+    if let count = frequency[char] {
+        print("\(char): \(count)")
+    }
+}
+
+
+program3: convert string to uppercase and lowercase
+
+
+let text = "Hello Swift"
+
+print("Uppercase:", text.uppercased())
+print("Lowercase:", text.lowercased())
+
+
+program4: find the first character of a string
+
+
+let text = "Programming"
+
+if let first = text.first {
+    print("First Character:", first)
+} else {
+    print("String is empty")
+}
+
+
+program5: check whether two strings are equal 
+
+
+let first = "Swift"
+let second = "Swift"
+
+if first == second {
+    print("Both Strings are Equal")
+} else {
+    print("Strings are Different")
+}
+
