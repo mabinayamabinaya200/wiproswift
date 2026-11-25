@@ -1,0 +1,139 @@
+program1: simple textfield
+
+
+import SwiftUI
+
+struct ContentView: View {
+    @State private var name = ""
+
+    var body: some View {
+        VStack(spacing: 20) {
+            Text("Enter Your Name")
+                .font(.title)
+
+            TextField("Enter name", text: $name)
+                .textFieldStyle(.roundedBorder)
+                .padding()
+
+            Text("Hello, \(name)!")
+        }
+        .padding()
+    }
+}
+
+
+program2: email input field
+
+
+import SwiftUI
+
+struct ContentView: View {
+    @State private var email = ""
+
+    var body: some View {
+        VStack(spacing: 20) {
+            Text("Email Address")
+                .font(.title)
+
+            TextField("Enter email", text: $email)
+                .keyboardType(.emailAddress)
+                .textInputAutocapitalization(.never)
+                .textFieldStyle(.roundedBorder)
+
+            Text("Your Email: \(email)")
+        }
+        .padding()
+    }
+}
+
+
+program3: password input field
+
+
+import SwiftUI
+
+struct ContentView: View {
+    @State private var password = ""
+
+    var body: some View {
+        VStack(spacing: 20) {
+            Text("Create Password")
+                .font(.title)
+
+            SecureField("Enter password", text: $password)
+                .textFieldStyle(.roundedBorder)
+
+            Text("Password Length: \(password.count)")
+        }
+        .padding()
+    }
+}
+
+
+program4: age input field 
+
+
+import SwiftUI
+
+struct ContentView: View {
+    @State private var age = ""
+
+    var body: some View {
+        VStack(spacing: 20) {
+            Text("Enter Your Age")
+                .font(.title)
+
+            TextField("Enter age", text: $age)
+                .keyboardType(.numberPad)
+                .textFieldStyle(.roundedBorder)
+
+            Button("Submit") {
+                print("Age:", age)
+            }
+        }
+        .padding()
+    }
+}
+
+
+program5: simple registration form
+
+
+import SwiftUI
+
+struct ContentView: View {
+    @State private var name = ""
+    @State private var email = ""
+    @State private var password = ""
+
+    var body: some View {
+        VStack(spacing: 20) {
+            Text("Registration")
+                .font(.largeTitle)
+                .bold()
+
+            TextField("Enter Name", text: $name)
+                .textFieldStyle(.roundedBorder)
+
+            TextField("Enter Email", text: $email)
+                .textFieldStyle(.roundedBorder)
+
+            SecureField("Enter Password", text: $password)
+                .textFieldStyle(.roundedBorder)
+
+            Button("Register") {
+                print("Name:", name)
+                print("Email:", email)
+                print("Registration Successful")
+            }
+            .frame(maxWidth: .infinity)
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(10)
+        }
+        .padding()
+    }
+}
+
+
