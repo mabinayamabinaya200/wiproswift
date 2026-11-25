@@ -1,0 +1,69 @@
+program1: display text
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        Text("Hello World!")
+    }
+}
+
+program2: change text color
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        Text("Welcome to SwiftUI")
+            .foregroundColor(.blue)
+    }
+}
+
+
+program3: change font size
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        Text("My First App")
+            .font(.system(size: 30))
+            .bold()
+    }
+}
+
+
+program4: display an image 
+
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        Image(systemName: "heart.fill")
+            .font(.system(size: 60))
+            .foregroundColor(.red)
+    }
+}
+
+
+program5: text with background color 
+
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        Text("Hello Abinaya!")
+            .font(.title)
+            .foregroundColor(.white)
+            .padding()
+            .background(Color.purple)
+            .cornerRadius(12)
+    }
+}
+
